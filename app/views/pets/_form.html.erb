@@ -1,0 +1,10 @@
+<div class="container col-4 border p-3 mt-3">
+  <%= simple_form_for(pet) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :age %>
+    <%= f.input :found_on %>
+    <%= f.input :species, collection: Pet::SPECIES %>
+    <%= f.submit class: "btn btn-danger mt-3" %>
+  <% end %>
+</div>

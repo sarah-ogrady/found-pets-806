@@ -1,0 +1,6 @@
+<% @pets.each do |pet| %>
+  <h1><%= link_to pet.name, pet_path(pet) %> - <%= pet.species %></h1>
+  <p>age: <%= pet.age %></p>
+  <p>address: <%= pet.address %></p>
+  <p>date found: <%= pet.found_on %>❤️</p>
+<% end %>
